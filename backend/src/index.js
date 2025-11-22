@@ -7,6 +7,7 @@ import usersRoutes from "./routes/usersRoutes.js";
 
 dotenv.config();
 
+console.log("Loaded JWT_SECRET:", process.env.JWT_SECRET);
 const app = express();
 app.use(cors());
 app.use(express.json());
